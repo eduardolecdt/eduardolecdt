@@ -1,0 +1,140 @@
+/* <section class="apresentacao"> */
+
+section.apresentacao {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-image: url('https://arquivos.lecdt.design/eduardolecdt/consultoria/background-rocha.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 150px 80px;
+}
+
+section.apresentacao img.divisor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+}
+
+section.apresentacao img.fogo {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 100%;
+  max-width: 80%;
+  animation: rodandoFogoHeader 10s linear infinite;
+  z-index: 1;
+}
+
+section.apresentacao img.edu1 {
+  width: 100%;
+  max-width: 25%;
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  z-index: 3;
+  animation: edu1Mexendo 10s linear infinite;
+}
+
+section.apresentacao img.edu2 {
+  width: 100%;
+  max-width: 20%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  animation: edu2Mexendo 10s linear infinite;
+}
+
+@keyframes edu1Mexendo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes edu2Mexendo {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 50px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes rodandoFogoHeader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+section.apresentacao .texto h1 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+}
+
+section.apresentacao .texto img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 30px;
+  }
+  section.apresentacao img.fogo {
+    top: auto;
+    bottom: -100px;
+    right: -30px;
+    width: 130%;
+    max-width: 130%;
+  }
+  section.apresentacao img.edu1 {
+    max-width: 50%;
+    right: 35%;
+  }
+  section.apresentacao img.edu2 {
+    max-width: 40%;
+  }
+  section.apresentacao .texto h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    width: 100%;
+    max-width: 250px;
+  }
+  section.apresentacao .texto img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,12 @@
+/* Index */
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/section-apresentacao.css';
+@import './partials/section-contato.css';
+@import './partials/section-historia.css';
+@import './partials/section-minutos.css';
+@import './partials/section-resultado.css';
+@import './partials/footer.css';

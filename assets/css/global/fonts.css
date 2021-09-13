@@ -1,0 +1,9 @@
+/* Fontes */
+
+@font-face {
+  font-family: 'markProBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://arquivos.lecdt.design/fonts/mark-pro-bold.woff') format('woff');
+}

@@ -1,0 +1,150 @@
+/* <section class="contato"> */
+
+section.contato {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--cor-branco);
+  position: relative;
+  overflow: hidden;
+}
+
+section.contato img.fogo {
+  position: absolute;
+  top: 100px;
+  left: -300px;
+  width: 100%;
+  max-width: 70%;
+  animation: rodandoFogoHeader 10s linear infinite;
+  z-index: 1;
+}
+
+section.contato img.edu {
+  width: 100%;
+  max-width: 25%;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  z-index: 3;
+  animation: eduMexendo 10s linear infinite;
+}
+
+@keyframes eduMexendo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rodandoFogoHeader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.contato .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 50%;
+  padding: 80px;
+  z-index: 2;
+}
+
+section.contato .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+}
+
+section.contato .texto .preco {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+section.contato .texto h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  color: var(--cor-verde-consultoria);
+  padding: 30px 10px 0 0;
+}
+
+section.contato .texto h4 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(8rem, 3vw, 10rem);
+  color: var(--cor-verde-consultoria);
+}
+
+section.contato .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  padding: 20px 50px;
+  border-radius: 150px;
+  background-color: var(--cor-verde-consultoria);
+  box-shadow: 10px 10px 40px 0 var(--cor-verde-consultoria);
+  transition: all 0.3s;
+}
+
+section.contato .texto button:hover {
+  background-color: var(--cor-azul-consultoria);
+  box-shadow: 10px 10px 40px 0 var(--cor-azul-consultoria);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.contato {
+    min-height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  section.contato img.fogo {
+    top: auto;
+    bottom: -100px;
+    left: -100px;
+    width: 140%;
+    max-width: 140%;
+  }
+  section.contato img.edu {
+    max-width: 70%;
+    left: 13%;
+    bottom: -50px;
+  }
+  section.contato .texto {
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 30px 550px 30px;
+  }
+  section.contato .texto h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+  }
+  section.contato .texto h3 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    padding: 20px 10px 0 0;
+  }
+  section.contato .preco {
+    padding: 20px 0;
+  }
+  section.contato .texto h4 {
+    font-size: clamp(4rem, 3vw, 6rem);
+  }
+  section.contato .texto button {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    padding: 15px 40px;
+  }
+}
