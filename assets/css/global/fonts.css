@@ -7,3 +7,11 @@
   font-display: swap;
   src: url('https://arquivos.lecdt.design/fonts/mark-pro-bold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'markProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://arquivos.lecdt.design/fonts/mark-pro.woff') format('woff');
+}

@@ -1,0 +1,321 @@
+/* <section class="apresentacao"> */
+
+section.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 30px 200px 30px;
+  background-image: var(--cor-preto);
+}
+
+section.apresentacao .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 900px;
+}
+
+section.apresentacao .titulo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+section.apresentacao .titulo h1 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 450px;
+  padding: 0 0 0 20px;
+}
+
+section.apresentacao .quadro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  margin: 80px 0 0 0;
+}
+
+section.apresentacao .quadro.lpinhtml {
+  background-image: url('https://arquivos.lecdt.design/eduardolecdt/index/background-lpinhtml.png');
+}
+
+section.apresentacao .quadro.mestres {
+  background-image: url('https://arquivos.lecdt.design/eduardolecdt/index/background-mestres.png');
+}
+
+section.apresentacao .quadro.contratar {
+  background-image: url('https://arquivos.lecdt.design/eduardolecdt/index/background-contratar.png');
+}
+
+section.apresentacao .quadro.consultoria {
+  background-image: url('https://arquivos.lecdt.design/eduardolecdt/index/background-consultoria.png');
+}
+
+section.apresentacao .quadro h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--cor-branco);
+}
+
+section.apresentacao .quadro p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 0;
+}
+
+section.apresentacao .quadro.contratar h2 {
+  color: var(--cor-preto);
+}
+
+section.apresentacao .quadro.contratar p {
+  color: var(--cor-preto);
+}
+
+section.apresentacao .quadro button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+section.apresentacao .quadro button:hover {
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+section.apresentacao .quadro button img {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+section.apresentacao .quadro button p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  padding: 0 0 0 60px;
+  border-radius: 15px 0 0 15px;
+  width: 100%;
+  min-height: 62px;
+  max-height: 62px;
+  pointer-events: none;
+}
+
+section.apresentacao .quadro button div.menor {
+  min-width: 5px;
+  max-width: 5px;
+  min-height: 62px;
+  max-height: 62px;
+  margin: 0 0 0 5px;
+  pointer-events: none;
+}
+
+section.apresentacao .quadro button div.menor.um {
+  animation: mexerFita 5s linear infinite;
+}
+
+section.apresentacao .quadro button div.menor.dois {
+  animation: mexerFita 4s linear infinite;
+}
+
+section.apresentacao .quadro button div.menor.tres {
+  animation: mexerFita 2s linear infinite;
+}
+
+section.apresentacao .quadro button div.maior {
+  min-width: 15px;
+  max-width: 15px;
+  min-height: 62px;
+  max-height: 62px;
+  margin: 0 0 0 5px;
+  border-radius: 0 15px 15px 0;
+  pointer-events: none;
+}
+
+@keyframes mexerFita {
+  0% {
+    min-height: 62px;
+    max-height: 62px;
+  }
+  50% {
+    min-height: 15px;
+    max-height: 15px;
+  }
+  100% {
+    min-height: 62px;
+    max-height: 62px;
+  }
+}
+
+section.apresentacao .quadro.lpinhtml button p {
+  color: var(--cor-branco);
+  background-color: var(--cor-rosa-index);
+}
+
+section.apresentacao .quadro.mestres button p {
+  color: var(--cor-preto);
+  background-color: var(--cor-branco);
+}
+
+section.apresentacao .quadro.contratar button p {
+  color: var(--cor-branco);
+  background-color: var(--cor-preto);
+}
+
+section.apresentacao .quadro.consultoria button p {
+  color: var(--cor-branco);
+  background-color: var(--cor-azul-index);
+}
+
+section.apresentacao .quadro.lpinhtml button div {
+  background-color: var(--cor-rosa-index);
+}
+
+section.apresentacao .quadro.mestres button div {
+  background-color: var(--cor-branco);
+}
+
+section.apresentacao .quadro.contratar button div {
+  background-color: var(--cor-preto);
+}
+
+section.apresentacao .quadro.consultoria button div {
+  background-color: var(--cor-azul-index);
+}
+
+section.apresentacao .quadro img.principal {
+  width: 100%;
+  position: absolute;
+}
+
+section.apresentacao .quadro.lpinhtml img.principal {
+  top: -20px;
+  right: 50px;
+  max-width: 200px;
+  animation: zoomLpinhtml 5s linear infinite;
+}
+
+@keyframes zoomLpinhtml {
+  0% {transform: scale(1);} 
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+section.apresentacao .quadro.mestres img.principal {
+  top: -20px;
+  right: 50px;
+  max-width: 250px;
+  animation: zoomMestres 4s linear infinite;
+}
+
+@keyframes zoomMestres {
+  0% {transform: scale(1);} 
+  50% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
+section.apresentacao .quadro.contratar img.principal {
+  top: 50%;
+  right: 50px;
+  max-width: 250px;
+  animation: zoomContratar 7s linear infinite;
+}
+
+@keyframes zoomContratar {
+  0% {transform: scale(1) translate(0, -50%);} 
+  50% {transform: scale(1.1) translate(0, -50%);}
+  100% {transform: scale(1) translate(0, -50%);}
+}
+
+section.apresentacao .quadro.consultoria img.principal {
+  bottom: 0;
+  right: 50px;
+  max-width: 180px;
+  animation: zoomConsultoria 5s linear infinite;
+}
+
+@keyframes zoomConsultoria {
+  0% {right: 50px;} 
+  50% {right: 80px;}
+  100% {right: 50px;}
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    padding: 50px 30px 120px 30px;
+  }
+  section.apresentacao .titulo img {
+    max-width: 50px;
+  }
+  section.apresentacao .titulo h1 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    max-width: 250px;
+    padding: 0 0 0 15px;
+  }
+  section.apresentacao .quadro button {
+    max-width: 250px;
+  }
+  section.apresentacao .quadro {
+    padding: 50px 30px 280px 30px;
+    margin: 50px 0 0 0;
+    border-radius: 20px;
+  }
+  section.apresentacao .quadro.lpinhtml img.principal {
+    top: auto;
+    bottom: -10px;
+    right: 30px;
+    max-width: 150px;
+  }
+  section.apresentacao .quadro.mestres img.principal {
+    top: auto;
+    bottom: -20px;
+    right: 30px;
+    max-width: 200px;
+  }
+  section.apresentacao .quadro.contratar img.principal {
+    top: auto;
+    bottom: -10px;
+    right: 30px;
+    max-width: 200px;
+  }
+  @keyframes zoomContratar {
+    0% {transform: scale(1) translate(0, 0);} 
+    50% {transform: scale(1.1) translate(0, 0);}
+    100% {transform: scale(1) translate(0, 0);}
+  }
+  section.apresentacao .quadro.consultoria img.principal {
+    bottom: 0;
+    right: 30px;
+    max-width: 140px;
+  }
+}
